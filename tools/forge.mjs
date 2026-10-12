@@ -86,7 +86,7 @@ async function putFile(repo, path, content, message) {
     await sleep(1500 * (i + 1));
     try {
       const back = await apiRetry('GET', `${cp}&cb=${Date.now()}`);
-      if (back && back.sha && res.commit && back.sha === res.commit.sha) { ok = true; break; }
+      if (back && back.sha && res.content && back.sha === res.content.sha) { ok = true; break; }
     } catch { /* 404 אפשרי בקצה — ממשיכים */ }
   }
   if (!ok) throw new Error(`verify-failed ${repo}/${path}`);
