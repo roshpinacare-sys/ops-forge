@@ -326,8 +326,8 @@ async function recipeGridPages(order, state) {
   }
   const p = await apiRetry('GET', `/repos/${ORG}/GridWatch/pages`).catch(e => e.status === 404 ? null : Promise.reject(e));
   if (p) return { done: true, result: `Pages כבר פעיל — ${p.html_url}`, commits: [] };
-  const sha = await putFile('GridWatch', 'pages/index.html', GRIDVIEWER, 'ops-forge: דף בריאות-צי ציבורי — מדידה חיה מהמקור [skip ci]');
-  await apiRetry('POST', `/repos/${ORG}/GridWatch/pages`, { source: { branch: 'main', path: '/pages' } });
+  const sha = await putFile('GridWatch', 'docs/index.html', GRIDVIEWER, 'ops-forge: דף בריאות-צי ציבורי — מדידה חיה מהמקור [skip ci]');
+  await apiRetry('POST', `/repos/${ORG}/GridWatch/pages`, { source: { branch: 'main', path: '/docs' } });
   state.pendingVerify = state.pendingVerify || {};
   state.pendingVerify.gridpages = new Date().toISOString();
   return { done: true, commits: [sha], result: 'דף נבנה ו-Pages הופעל — אימות-URL במחזור הבא' };
