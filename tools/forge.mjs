@@ -43,13 +43,15 @@ function api(method, path, body, accept = 'application/vnd.github+json') {
   });
 }
 const sleep = ms => new Promise(r => setTimeout(r, ms));
-async function apiRetry(method, path, body, tries = 4) {
+const JSON_ACCEPT = 'application/vnd.github+json';
+const RAW_ACCEPT = 'application/vnd.github.raw';
+async function apiRetry(method, path, body, accept = JSON_ACCEPT, tries = 4) {
   let last;
   for (let i = 0; i < tries; i++) {
-    try { return await api(method, path, body); }
+    try { return await api(method, path, body, accept); }
     catch (e) {
       last = e;
-      if (e.status === 409 || e.status >= 500 || e.status === 403) { await sleep(1500 * (i + 1)); continue; }
+      if (e && (e.status === 409 || e.status >= 500 || e.status === 403)) { await sleep(1500 * (i + 1)); continue; }
       throw e;
     }
   }
@@ -60,10 +62,11 @@ function contentsPath(repo, path) {
 }
 async function getRaw(repo, path) {
   try {
-    const r = await apiRetry('GET', contentsPath(repo, path), null, 'application/vnd.github.raw');
-    return typeof r.raw === 'string' ? r.raw : JSON.stringify(r);
+    const r = await apiRetry('GET', contentsPath(repo, path), null, RAW_ACCEPT);
+    if (typeof r.raw === 'string') return r.raw;
+    return JSON.stringify(r);
   } catch (e) {
-    if (e.status === 404) return null;
+    if (e && e.status === 404) return null;
     throw e;
   }
 }
@@ -72,13 +75,21 @@ async function putFile(repo, path, content, message) {
   try {
     const head = await apiRetry('GET', contentsPath(repo, path));
     sha = head && head.sha;
-  } catch (e) { if (e.status !== 404) throw e; }
+  } catch (e) { if (!e || e.status !== 404) throw e; }
   const res = await apiRetry('PUT', contentsPath(repo, path), {
     message, content: Buffer.from(content, 'utf8').toString('base64'), branch: 'main', ...(sha ? { sha } : {}),
   });
-  // אימות-קריאה-חוזרת — ההוכחה שהקומיט נחת במקור
-  const back = await apiRetry('GET', contentsPath(repo, path));
-  if (!back.sha || back.sha !== res.commit.sha) throw new Error(`verify-failed ${repo}/${path}`);
+  // אימות-קריאה-חוזרת — ההוכחה שהקומיט נחת במקור. מוליד עקביות-קצה: ניסיונות עם הפוגה ושבירת-מטמון.
+  const cp = contentsPath(repo, path);
+  let ok = false;
+  for (let i = 0; i < 4; i++) {
+    await sleep(1500 * (i + 1));
+    try {
+      const back = await apiRetry('GET', `${cp}&cb=${Date.now()}`);
+      if (back && back.sha && res.commit && back.sha === res.commit.sha) { ok = true; break; }
+    } catch { /* 404 אפשרי בקצה — ממשיכים */ }
+  }
+  if (!ok) throw new Error(`verify-failed ${repo}/${path}`);
   return res.commit.sha;
 }
 async function appendJsonl(repo, path, obj) {
@@ -94,7 +105,7 @@ async function appendJsonl(repo, path, obj) {
       });
       const back = await getRaw(repo, path);
       if (back && back.trim().endsWith(JSON.stringify(obj))) return true;
-    } catch (e) { if (e.status !== 409) throw e; await sleep(1200); }
+    } catch (e) { if (!e || e.status !== 409) throw e; await sleep(1200); }
   }
   throw new Error(`append-failed ${repo}/${path}`);
 }
@@ -113,6 +124,15 @@ async function hasActiveOwnership(repo) {
     }
   }
   return false;
+}
+
+
+// ---------- דה-דופליקציה בצד-היעד ----------
+async function filedTodayIn(repo, path, needle) {
+  const t = await getRaw(repo, path);
+  if (!t) return false;
+  const d = today();
+  return t.trim().split('\n').slice(-60).some(l => l.includes(d) && l.includes(needle));
 }
 
 // ---------- מצב-המבצע ----------
@@ -183,7 +203,8 @@ async function recipeDecisionBrief(order, state) {
     `מקור — ops-forge · סדר-עבודה ${order.id} · כל מספר נמדד מ-API בריצה זו.`,
   ].join('\n');
   const sha = await putFile('ops-forge', `ops/DECISIONS/minutes-wall/${today()}.md`, brief, `ops-forge: תדריך-החלטה חומת-דקות ${today()} — ${wall.length} ריפו, ${totalBlocked} וורקפלו חסומים [skip ci]`);
-  await appendJsonl('Sandbox', 'ops/sovereign/OWNER-CHANNEL/inbox.jsonl', {
+  const refNeedle = `/ops/DECISIONS/minutes-wall/${today()}.md`;
+  if (!(await filedTodayIn('Sandbox', 'ops/sovereign/OWNER-CHANNEL/inbox.jsonl', refNeedle))) await appendJsonl('Sandbox', 'ops/sovereign/OWNER-CHANNEL/inbox.jsonl', {
     at: new Date().toISOString(), role: 'agent', source: 'ops-forge', kind: 'owner-decision',
     subject: `חומת דקות Actions — תדריך החלטה עם מספרים טריים (${wall.length} ריפו, ${totalBlocked} וורקפלו)`,
     ref: `ops-forge/ops/DECISIONS/minutes-wall/${today()}.md`, orderId: order.id,
@@ -237,7 +258,8 @@ async function recipeStreakDiagnose(order, state) {
       : `אין ערוץ פעיל — האבחון הוסלם לערוץ-המפעילים עם הראיות; תיקון-שורש דורש החלטת-בעלות על חומר-המשמורת.`,
   ].join('\n');
   const sha = await putFile('ops-forge', `ops/DIAGNOSES/${repo}-${wfName}-${today()}.md`, md, `ops-forge: אבחון ${repo}/${wfName} [skip ci]`);
-  await appendJsonl('FleetHQ', 'office/state/operator-inbox.jsonl', {
+  const diagNeedle = `/ops/DIAGNOSES/${repo}-${wfName}-${today()}.md`;
+  if (!(await filedTodayIn('FleetHQ', 'office/state/operator-inbox.jsonl', diagNeedle))) await appendJsonl('FleetHQ', 'office/state/operator-inbox.jsonl', {
     at: new Date().toISOString(), role: 'agent', source: 'ops-forge', kind: 'streak-diagnosis',
     subject: `אבחון ${repo}/${wfName} — הפניה לקובץ האבחון המלא`, ref: `ops-forge/ops/DIAGNOSES/${repo}-${wfName}-${today()}.md`,
   });
@@ -351,7 +373,7 @@ async function recipeFeedVerify(order, state) {
   }
   const ageH = stamp ? (Date.now() - Date.parse(stamp)) / 3600e3 : Infinity;
   if (Number.isFinite(ageH) && ageH < 24) return { done: true, result: `הפיד חי — גיל ${ageH.toFixed(1)} שע (חוק 24 שע עומד)`, commits: [] };
-  await appendJsonl('Sandbox', 'ops/sovereign/OWNER-CHANNEL/inbox.jsonl', {
+  if (!(await filedTodayIn('Sandbox', 'ops/sovereign/OWNER-CHANNEL/inbox.jsonl', feed.path))) await appendJsonl('Sandbox', 'ops/sovereign/OWNER-CHANNEL/inbox.jsonl', {
     at: new Date().toISOString(), role: 'agent', source: 'ops-forge', kind: 'dead-feed',
     subject: `פיד מת נמדד שוב — ${feed.repo}/${feed.path}`, evidence: `stamp ${stamp}`,
   });
