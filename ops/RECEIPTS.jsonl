@@ -9,3 +9,14 @@
 {"at":"2026-10-12T23:39:30.874Z","orderId":"QUEUE-20261012-09","recipe":"VersionInfo","result":"כשל-מדוד — verify-failed roshpinacare-sys.github.io/index.html"}
 {"at":"2026-10-12T23:39:30.874Z","orderId":"QUEUE-20261012-10","recipe":"VersionInfo","result":"דולג — ערוץ פעיל ב-Domain — ההזמנה נמסרת בהסלמה, המבצע לא נוגע"}
 {"at":"2026-10-12T23:39:32.869Z","orderId":"QUEUE-20261012-11","recipe":"GridPages","result":"כשל-מדוד — verify-failed GridWatch/pages/index.html"}
+{"at":"2026-10-12T23:42:57.776Z","orderId":"QUEUE-20261012-01","recipe":"DecisionBrief","result":"כשל-מדוד — verify-failed ops-forge/ops/DECISIONS/minutes-wall/2026-10-12.md"}
+{"at":"2026-10-12T23:42:57.918Z","orderId":"QUEUE-20261012-02","recipe":"FeedVerify","result":"הפיד חי — גיל 0.7 שע (חוק 24 שע עומד)","commits":[]}
+{"at":"2026-10-12T23:43:15.172Z","orderId":"QUEUE-20261012-03","recipe":"StreakDiagnose","result":"כשל-מדוד — verify-failed ops-forge/ops/DIAGNOSES/saos-runtime-fleet-rotation-a-2026-10-12.md"}
+{"at":"2026-10-12T23:43:15.172Z","orderId":"QUEUE-20261012-04","kind":"gridwatch-owned","result":"measured-unmatched — אין מתכון דטרמיניסטי; ממתין לסוכן-שפה או לריבונות"}
+{"at":"2026-10-12T23:43:15.172Z","orderId":"QUEUE-20261012-05","kind":"gridwatch-owned","result":"measured-unmatched — אין מתכון דטרמיניסטי; ממתין לסוכן-שפה או לריבונות"}
+{"at":"2026-10-12T23:43:15.172Z","orderId":"QUEUE-20261012-06","kind":"gridwatch-owned","result":"measured-unmatched — אין מתכון דטרמיניסטי; ממתין לסוכן-שפה או לריבונות"}
+{"at":"2026-10-12T23:43:15.172Z","orderId":"QUEUE-20261012-07","kind":"gridwatch-owned","result":"measured-unmatched — אין מתכון דטרמיניסטי; ממתין לסוכן-שפה או לריבונות"}
+{"at":"2026-10-12T23:43:15.172Z","orderId":"QUEUE-20261012-08","kind":"gridwatch-owned","result":"measured-unmatched — אין מתכון דטרמיניסטי; ממתין לסוכן-שפה או לריבונות"}
+{"at":"2026-10-12T23:43:15.317Z","orderId":"QUEUE-20261012-09","recipe":"VersionInfo","result":"בלוק-גרסה קיים — נבדק","commits":[]}
+{"at":"2026-10-12T23:43:15.317Z","orderId":"QUEUE-20261012-10","recipe":"VersionInfo","result":"דולג — ערוץ פעיל ב-Domain — ההזמנה נמסרת בהסלמה, המבצע לא נוגע"}
+{"at":"2026-10-12T23:43:32.062Z","orderId":"QUEUE-20261012-11","recipe":"GridPages","result":"כשל-מדוד — verify-failed GridWatch/pages/index.html"}
