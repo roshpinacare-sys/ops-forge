@@ -51,3 +51,4 @@
 {"at":"2026-10-13T06:34:25.178Z","orderId":"QUEUE-20261013-13","kind":"gridwatch-owned","result":"measured-unmatched — אין מתכון דטרמיניסטי; ממתין לסוכן-שפה או לריבונות"}
 {"at":"2026-10-13T06:34:25.179Z","orderId":"QUEUE-20261012-10","recipe":"VersionInfo","result":"דולג — ערוץ פעיל ב-Domain — ההזמנה נמסרת בהסלמה, המבצע לא נוגע"}
 {"at":"2026-10-13T06:34:25.179Z","orderId":"QUEUE-20261013-14","recipe":"VersionInfo","result":"דולג — מחוץ לנתיב-הבעלות של המבצע"}
+{"at":"2026-10-13T11:40:00.000Z","orderId":"QUEUE-EMAIL-FLOOD","recipe":"EmailFloodTreatment","result":"טיפול-שיטוט: 65 וורקפלו-זימון שמתים בריפו-פרטים (קיר-הדקות) כובו — 64 נכים עם PUT 204 + 1 נמצא כבוי בקריאת-חזרה (Zip/web-probe2). מקור: fleet-health alerts 09:38Z · רשימת-השבתה מלאה: ops/TREATMENTS/email-flood-2026-10-13.md · העורקים-הציבוריים-החיים לא נגעו"}
