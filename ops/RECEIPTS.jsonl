@@ -81,3 +81,4 @@
 {"at":"2026-10-14T00:13:58.416Z","orderId":"QUEUE-20261012-10","recipe":"VersionInfo","result":"דולג — ערוץ פעיל ב-Domain — ההזמנה נמסרת בהסלמה, המבצע לא נוגע"}
 {"at":"2026-10-14T00:13:58.416Z","orderId":"QUEUE-20261013-14","recipe":"VersionInfo","result":"דולג — מחוץ לנתיב-הבעלות של המבצע"}
 {"at":"2026-10-14T05:16:24.034Z","orderId":"QUEUE-20261013-12","kind":"gridwatch-owned","result":"measured-unmatched — אין מתכון דטרמיניסטי; ממתין לסוכן-שפה או לריבונות"}
+{"ts": "2026-10-14T06:21:53Z", "actor": "zai-code (T28)", "action": "disable", "repo": "Sandbox", "workflow": "compute-canary", "wfId": 383742240, "why": "חוק-T23: ריפו-פרטי = זיכרון-בלבד; הוורקפלו נכשל-מיידי (4s, אפס-שלבים, config/code defect לפי GridWatch) ומייצר רעש-אימייל; זוהה ב-fleet-health כ-private-67fc6249 (אנונימיזציה)", "verified": "readback state=disabled_manually"}
