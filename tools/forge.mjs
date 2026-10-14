@@ -115,11 +115,18 @@ async function putFile(repo, path, content, message) {
   // אימות-קריאה-חוזרת — ההוכחה שהקומיט נחת במקור. מוליד עקביות-קצה: ניסיונות עם הפוגה ושבירת-מטמון.
   const cp = contentsPath(repo, path);
   let ok = false;
-  for (let i = 0; i < 4; i++) {
+  for (let i = 0; i < 8; i++) {
     await sleep(1500 * (i + 1));
     try {
       const back = await apiRetry('GET', `${cp}&cb=${Date.now()}`);
       if (back && back.sha && res.content && back.sha === res.content.sha) { ok = true; break; }
+      // חוק-הפנקס (append-only): כותב-אח-מקביל שצירף-שורות-אחרינו שומר על הבייטים-שלנו
+      // בקובץ-החי — הכתיבה כן נחתה; שוויון-sha גרידא מפרש זאת ככשל (מדידה:
+      // verify-failed ×3 על ops/RECEIPTS.jsonl, כולל שני ניסיונות-הריצה-החוזרת 2026-10-14).
+      if (back && back.content) {
+        const live = Buffer.from(back.content, 'base64').toString('utf8');
+        if (live.startsWith(content)) { ok = true; break; }
+      }
     } catch { /* 404 אפשרי בקצה — ממשיכים */ }
   }
   if (!ok) throw new Error(`verify-failed ${repo}/${path}`);
