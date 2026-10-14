@@ -1,0 +1,215 @@
+# סריקת-tsc מלאה — T51 (ההגשה הסופית)
+# נמדד: bunx tsc --noEmit (tsconfig מלא, tmp מוצר) · exit=1 · 209 שגיאות
+# קבצי-T51 (SubmissionWorld · estate · SideNav · WorldDeck · submission-map): 0 שגיאות
+# שאר = חובות-ישנות שנרשמו כ-GAP לנחיל (אפס-נגיעה בקבצים-זרים L-04)
+# נמדד: 2026-10-14T23:49Z
+
+examples/websocket/server.ts(2,24): error TS2307: Cannot find module 'socket.io' or its corresponding type declarations.
+skills/image-edit/scripts/image-edit.ts(10,4): error TS2561: Object literal may only specify known properties, but 'images' does not exist in type 'CreateImageEditBody'. Did you mean to write 'image'?
+skills/stock-analysis-skill/src/analyzer.ts(253,11): error TS2322: Type '({ type: string; image: { type: "base64"; data: string; mediaType: "image/png"; url?: undefined; } | { type: "url"; url: string; data?: undefined; mediaType?: undefined; }; } | { type: string; text: string; })[]' is not assignable to type 'string'.
+src/app/api/decisions/route.ts(91,21): error TS2559: Type 'QueueOrder[]' has no properties in common with type 'QueueFile'.
+src/app/api/decisions/route.ts(97,30): error TS2345: Argument of type 'ForgeReceipt[]' is not assignable to parameter of type 'string'.
+src/app/api/decisions/route.ts(99,28): error TS2559: Type 'ForemanDecision[]' has no properties in common with type 'ForemanRaw'.
+src/app/api/decisions/route.ts(103,29): error TS2345: Argument of type 'SovereignEntry[]' is not assignable to parameter of type 'string'.
+src/app/api/owner-chat/route.ts(76,47): error TS2339: Property 'sha' does not exist on type '{}'.
+src/app/api/owner-gate/route.ts(70,43): error TS2322: Type 'string | null' is not assignable to type 'string'.
+  Type 'null' is not assignable to type 'string'.
+src/app/api/owner-gate/route.ts(98,9): error TS2322: Type 'KeyfitResult' is not assignable to type 'Record<string, unknown>'.
+  Index signature for type 'string' is missing in type 'KeyfitResult'.
+src/components/deck/FleetGallery.tsx(118,7): error TS2322: Type '{ icon: ReactNode; id: string; title: string; desc: string; tags: string[]; lane: string; recency: number; world: CatalogWorld; econTab?: CatalogEconTab | undefined; anchor?: string | undefined; recipe: string; }[]' is not assignable to type 'CatalogEntry[]'.
+  Type '{ icon: ReactNode; id: string; title: string; desc: string; tags: string[]; lane: string; recency: number; world: CatalogWorld; econTab?: CatalogEconTab; anchor?: string; recipe: string; }' is not assignable to type 'CatalogEntry'.
+    Types of property 'icon' are incompatible.
+      Type 'ReactNode' is not assignable to type 'CatalogIcon'.
+        Type 'undefined' is not assignable to type 'CatalogIcon'.
+src/components/deck/FleetGallery.tsx(549,39): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
+src/components/deck/SectionNav.tsx(49,63): error TS2322: Type '"merge-dex" | "merge-gallery" | "merge-doctrine" | "merge-machine" | "merge-pulse"' is not assignable to type '"merge-doctrine"'.
+  Type '"merge-dex"' is not assignable to type '"merge-doctrine"'.
+src/components/hq/GitWallData.tsx(216,31): error TS2339: Property 'lastRunConclusion' does not exist on type 'RepoFleetView'.
+src/components/hq/GitWallData.tsx(216,52): error TS2339: Property 'lastRunStatus' does not exist on type 'RepoFleetView'.
+src/components/hq/GitWallData.tsx(219,20): error TS2339: Property 'commits7d' does not exist on type 'RepoFleetView'.
+src/components/hq/GitWallData.tsx(219,64): error TS2339: Property 'commits7d' does not exist on type 'RepoFleetView'.
+src/components/hq/GitWallData.tsx(220,20): error TS2339: Property 'commits7d' does not exist on type 'RepoFleetView'.
+src/components/hq/GitWallData.tsx(220,34): error TS2339: Property 'commits7dCapped' does not exist on type 'RepoFleetView'.
+src/components/hq/Stations.tsx(83,47): error TS2367: This comparison appears to be unintentional because the types '"sim"' and '"mirror"' have no overlap.
+src/components/owner/NetworkSelf.tsx(170,60): error TS2304: Cannot find name 'Eye'.
+src/components/owner/OwnerChat.tsx(38,35): error TS2304: Cannot find name 'TOKEN_KEY'.
+src/components/worlds/NetworkWorld.tsx(154,19): error TS18048: 'd.nodes' is possibly 'undefined'.
+src/lib/giant/catalog.ts(50,18): error TS2345: Argument of type 'unknown' is not assignable to parameter of type 'string'.
+src/lib/giant/catalog.ts(51,14): error TS2345: Argument of type 'unknown' is not assignable to parameter of type 'string'.
+src/lib/giant/desk.ts(287,40): error TS1117: An object literal cannot have multiple properties with the same name.
+src/lib/hq/feed.ts(79,5): error TS2322: Type '"mirror"' is not assignable to type '"live" | "sim"'.
+src/lib/keyfit.ts(18,11): error TS2737: BigInt literals are not available when targeting lower than ES2020.
+src/lib/keyfit.ts(22,13): error TS2737: BigInt literals are not available when targeting lower than ES2020.
+src/lib/keyfit.ts(35,11): error TS2737: BigInt literals are not available when targeting lower than ES2020.
+src/lib/keyfit.ts(36,32): error TS2737: BigInt literals are not available when targeting lower than ES2020.
+src/lib/keyfit.ts(38,14): error TS2737: BigInt literals are not available when targeting lower than ES2020.
+src/lib/keyfit.ts(39,24): error TS2737: BigInt literals are not available when targeting lower than ES2020.
+src/lib/keyfit.ts(40,10): error TS2737: BigInt literals are not available when targeting lower than ES2020.
+t19b/Console/verify/scripts/weave-verify-book.ts(22,53): error TS2307: Cannot find module '@/lib/weave/chain' or its corresponding type declarations.
+t19b/Console/verify/scripts/weave-verify-book.ts(23,41): error TS2307: Cannot find module '@/lib/weave/evm' or its corresponding type declarations.
+t19b/Console/verify/scripts/weave-verify-book.ts(28,8): error TS2307: Cannot find module '@/lib/weave/market-canon' or its corresponding type declarations.
+t19b/Console/verify/src/lib/weave/chain.ts(10,40): error TS2307: Cannot find module 'ethers' or its corresponding type declarations.
+t19b/Console/verify/src/lib/weave/evm.ts(20,8): error TS2307: Cannot find module 'ethers' or its corresponding type declarations.
+t19b/Console/verify/src/lib/weave/evm.ts(21,37): error TS2307: Cannot find module 'ethers' or its corresponding type declarations.
+t19b/FleetHQ/examples/websocket/server.ts(2,24): error TS2307: Cannot find module 'socket.io' or its corresponding type declarations.
+t19b/FleetHQ/mini-services/agent-hq/index.ts(1,24): error TS2307: Cannot find module 'socket.io' or its corresponding type declarations.
+t19b/FleetHQ/mini-services/agent-hq/src/fronthouse.ts(49,79): error TS2339: Property 'dir' does not exist on type 'ImportMeta'.
+t19b/FleetHQ/mini-services/agent-hq/src/fronthouse.ts(66,9): error TS2769: No overload matches this call.
+  The last overload gave the following error.
+    Property 'NODE_ENV' is missing in type 'Record<string, string>' but required in type 'ProcessEnv'.
+t19b/FleetHQ/mini-services/agent-hq/src/fronthouse.ts(70,13): error TS2339: Property 'on' does not exist on type 'never'.
+  The intersection 'ChildProcessWithoutNullStreams & ChildProcessByStdio<Writable, Readable, Readable> & ... 7 more ... & ChildProcess' was reduced to 'never' because property 'stdin' has conflicting types in some constituents.
+t19b/FleetHQ/mini-services/agent-hq/src/fronthouse.ts(71,13): error TS2339: Property 'unref' does not exist on type 'never'.
+  The intersection 'ChildProcessWithoutNullStreams & ChildProcessByStdio<Writable, Readable, Readable> & ... 7 more ... & ChildProcess' was reduced to 'never' because property 'stdin' has conflicting types in some constituents.
+t19b/FleetHQ/mini-services/agent-hq/src/sim.ts(18,10): error TS2341: Property 'emit' is private and only accessible within class 'Office'.
+t19b/FleetHQ/mini-services/agent-hq/src/sim.ts(34,10): error TS2341: Property 'emit' is private and only accessible within class 'Office'.
+t19b/FleetHQ/mini-services/agent-hq/src/sim.ts(112,10): error TS2341: Property 'emit' is private and only accessible within class 'Office'.
+t19b/FleetHQ/mini-services/agent-hq/tools/lineage-guard.ts(370,47): error TS2741: Property 'NODE_ENV' is missing in type '{ GIT_EDITOR: string; }' but required in type 'ProcessEnv'.
+t19b/FleetHQ/mini-services/agent-hq/tools/lineage-guard.ts(424,50): error TS2741: Property 'NODE_ENV' is missing in type '{ GIT_EDITOR: string; }' but required in type 'ProcessEnv'.
+t19b/FleetHQ/mini-services/boot-verifier/index.ts(153,15): error TS2867: Cannot find name 'Bun'. Do you need to install type definitions for Bun? Try `npm i --save-dev @types/bun`.
+t19b/FleetHQ/mini-services/boot-verifier/index.ts(213,1): error TS2867: Cannot find name 'Bun'. Do you need to install type definitions for Bun? Try `npm i --save-dev @types/bun`.
+t19b/FleetHQ/mini-services/duckai/src/duckai.ts(1,23): error TS2307: Cannot find module 'user-agents' or its corresponding type declarations.
+t19b/FleetHQ/mini-services/duckai/src/duckai.ts(2,23): error TS2307: Cannot find module 'jsdom' or its corresponding type declarations.
+t19b/FleetHQ/mini-services/duckai/src/duckai.ts(260,5): error TS2741: Property 'vqd' is missing in type '{ hash: string; }' but required in type 'VQDResponse'.
+t19b/FleetHQ/mini-services/duckai/src/server.ts(5,16): error TS2867: Cannot find name 'Bun'. Do you need to install type definitions for Bun? Try `npm i --save-dev @types/bun`.
+t19b/FleetHQ/mini-services/duckai/src/tool-service.ts(128,47): error TS1501: This regular expression flag is only available when targeting 'es2018' or later.
+t19b/FleetHQ/mini-services/duckai/tests/e2e-tools.test.ts(1,59): error TS2307: Cannot find module 'bun:test' or its corresponding type declarations.
+t19b/FleetHQ/mini-services/duckai/tests/e2e-tools.test.ts(2,29): error TS2307: Cannot find module 'bun' or its corresponding type declarations.
+t19b/FleetHQ/mini-services/duckai/tests/e2e-tools.test.ts(14,14): error TS2867: Cannot find name 'Bun'. Do you need to install type definitions for Bun? Try `npm i --save-dev @types/bun`.
+t19b/FleetHQ/mini-services/duckai/tests/openai-library.test.ts(1,59): error TS2307: Cannot find module 'bun:test' or its corresponding type declarations.
+t19b/FleetHQ/mini-services/duckai/tests/openai-library.test.ts(2,20): error TS2307: Cannot find module 'openai' or its corresponding type declarations.
+t19b/FleetHQ/mini-services/duckai/tests/openai-simple.test.ts(1,59): error TS2307: Cannot find module 'bun:test' or its corresponding type declarations.
+t19b/FleetHQ/mini-services/duckai/tests/openai-simple.test.ts(2,20): error TS2307: Cannot find module 'openai' or its corresponding type declarations.
+t19b/FleetHQ/mini-services/duckai/tests/openai-tools.test.ts(1,50): error TS2307: Cannot find module 'bun:test' or its corresponding type declarations.
+t19b/FleetHQ/mini-services/duckai/tests/rate-limit-handling.test.ts(1,50): error TS2307: Cannot find module 'bun:test' or its corresponding type declarations.
+t19b/FleetHQ/mini-services/duckai/tests/rate-limit-handling.test.ts(193,66): error TS2345: Argument of type '{ model: string; messages: { role: string; content: string; }[]; tools: ToolDefinition[]; }' is not assignable to parameter of type 'ChatCompletionRequest'.
+  Types of property 'messages' are incompatible.
+    Type '{ role: string; content: string; }[]' is not assignable to type 'ChatCompletionMessage[]'.
+      Type '{ role: string; content: string; }' is not assignable to type 'ChatCompletionMessage'.
+        Types of property 'role' are incompatible.
+          Type 'string' is not assignable to type '"user" | "system" | "assistant" | "tool"'.
+t19b/FleetHQ/mini-services/duckai/tests/rate-limit-monitor.test.ts(1,50): error TS2307: Cannot find module 'bun:test' or its corresponding type declarations.
+t19b/FleetHQ/mini-services/duckai/tests/rate-limit-monitor.test.ts(2,34): error TS2307: Cannot find module '../src/rate-limit-monitor' or its corresponding type declarations.
+t19b/FleetHQ/mini-services/duckai/tests/rate-limit-monitor.test.ts(121,33): error TS2339: Property 'windowStart' does not exist on type 'RateLimitInfo'.
+t19b/FleetHQ/mini-services/duckai/tests/rate-limit-monitor.test.ts(161,23): error TS2339: Property 'requestCount' does not exist on type 'RateLimitInfo'.
+t19b/FleetHQ/mini-services/duckai/tests/rate-limit-monitor.test.ts(162,23): error TS2339: Property 'windowStart' does not exist on type 'RateLimitInfo'.
+t19b/FleetHQ/mini-services/duckai/tests/rate-limit-monitor.test.ts(196,16): error TS18046: 'error' is of type 'unknown'.
+t19b/FleetHQ/mini-services/duckai/tests/server.test.ts(1,59): error TS2307: Cannot find module 'bun:test' or its corresponding type declarations.
+t19b/FleetHQ/mini-services/duckai/tests/tool-service.test.ts(1,50): error TS2307: Cannot find module 'bun:test' or its corresponding type declarations.
+t19b/FleetHQ/mini-services/office-recruit/recruit.ts(76,13): error TS2867: Cannot find name 'Bun'. Do you need to install type definitions for Bun? Try `npm i --save-dev @types/bun`.
+t19b/FleetHQ/mini-services/office-recruit/recruit.ts(388,16): error TS2867: Cannot find name 'Bun'. Do you need to install type definitions for Bun? Try `npm i --save-dev @types/bun`.
+t19b/FleetHQ/mini-services/office-selfcheck/index.ts(230,1): error TS2867: Cannot find name 'Bun'. Do you need to install type definitions for Bun? Try `npm i --save-dev @types/bun`.
+t19b/FleetHQ/src/app/api/operator/message/route.ts(19,29): error TS2307: Cannot find module '@/lib/operator-session' or its corresponding type declarations.
+t19b/FleetHQ/src/app/api/operator/unlock/route.ts(17,28): error TS2307: Cannot find module '@/lib/operator-session' or its corresponding type declarations.
+t19b/FleetHQ/src/app/api/v1/[...path]/route.ts(2,32): error TS2307: Cannot find module '@/lib/gateway-proxy' or its corresponding type declarations.
+t19b/FleetHQ/src/app/api/veritas/route.ts(22,8): error TS2307: Cannot find module '@/lib/veritas' or its corresponding type declarations.
+t19b/FleetHQ/src/app/page.tsx(1,21): error TS2307: Cannot find module '@/components/agent-hq/AgentHQ' or its corresponding type declarations.
+t19b/FleetHQ/src/app/v1/[...path]/route.ts(2,32): error TS2307: Cannot find module '@/lib/gateway-proxy' or its corresponding type declarations.
+t19b/FleetHQ/src/components/agent-hq/AgentHQ.tsx(261,37): error TS2345: Argument of type 'import("/home/z/my-project/t19b/FleetHQ/src/components/agent-hq/types").Snapshot' is not assignable to parameter of type 'import("/home/z/my-project/src/components/agent-hq/types").Snapshot'.
+  The types of 'status.backend' are incompatible between these types.
+    Type '"live" | "sim" | "static" | "mirror"' is not assignable to type '"live" | "sim"'.
+      Type '"static"' is not assignable to type '"live" | "sim"'.
+t19b/FleetHQ/src/components/agent-hq/AgentHQ.tsx(316,35): error TS2345: Argument of type 'import("/home/z/my-project/t19b/FleetHQ/src/components/agent-hq/types").ForemanStatus' is not assignable to parameter of type 'import("/home/z/my-project/src/components/agent-hq/types").ForemanStatus'.
+  Types of property 'backend' are incompatible.
+    Type '"live" | "sim" | "static" | "mirror"' is not assignable to type '"live" | "sim"'.
+      Type '"static"' is not assignable to type '"live" | "sim"'.
+t19b/FleetHQ/src/components/hq/GitWallData.tsx(216,31): error TS2339: Property 'lastRunConclusion' does not exist on type 'RepoFleetView'.
+t19b/FleetHQ/src/components/hq/GitWallData.tsx(216,52): error TS2339: Property 'lastRunStatus' does not exist on type 'RepoFleetView'.
+t19b/FleetHQ/src/components/hq/GitWallData.tsx(219,20): error TS2339: Property 'commits7d' does not exist on type 'RepoFleetView'.
+t19b/FleetHQ/src/components/hq/GitWallData.tsx(219,64): error TS2339: Property 'commits7d' does not exist on type 'RepoFleetView'.
+t19b/FleetHQ/src/components/hq/GitWallData.tsx(220,20): error TS2339: Property 'commits7d' does not exist on type 'RepoFleetView'.
+t19b/FleetHQ/src/components/hq/GitWallData.tsx(220,34): error TS2339: Property 'commits7dCapped' does not exist on type 'RepoFleetView'.
+t19b/FleetHQ/src/components/hq/Stations.tsx(82,47): error TS2367: This comparison appears to be unintentional because the types '"sim"' and '"mirror"' have no overlap.
+t19b/FleetHQ/src/components/worlds/SelfWorld.tsx(34,21): error TS2339: Property 'freshOracle' does not exist on type 'WorldsPayload'.
+t19b/FleetHQ/src/components/worlds/SelfWorld.tsx(35,19): error TS2339: Property 'connectivity' does not exist on type 'WorldsPayload'.
+t19b/FleetHQ/src/components/worlds/SelfWorld.tsx(36,19): error TS2339: Property 'bootVerify' does not exist on type 'WorldsPayload'.
+t19b/FleetHQ/src/components/worlds/SelfWorld.tsx(72,19): error TS2339: Property 'freshOracle' does not exist on type 'WorldsPayload'.
+t19b/FleetHQ/src/components/worlds/SelfWorld.tsx(110,19): error TS2339: Property 'connectivity' does not exist on type 'WorldsPayload'.
+t19b/FleetHQ/src/lib/hq/feed.ts(79,5): error TS2322: Type '"mirror"' is not assignable to type '"live" | "sim"'.
+t19b/FleetHQ/tools/office3d-static/main.tsx(113,7): error TS2322: Type '"static"' is not assignable to type '"live" | "sim"'.
+t19b/FleetHQ/tools/office3d-static/main.tsx(135,9): error TS2322: Type '"static"' is not assignable to type '"live" | "sim"'.
+t19b/FleetHQ/tools/security-regression.ts(181,50): error TS2339: Property 'dependsOn' does not exist on type '{ id: string; title: string; description: string; status: string; }'.
+t19b/mirror/Console/verify/scripts/weave-verify-book.ts(22,53): error TS2307: Cannot find module '@/lib/weave/chain' or its corresponding type declarations.
+t19b/mirror/Console/verify/scripts/weave-verify-book.ts(23,41): error TS2307: Cannot find module '@/lib/weave/evm' or its corresponding type declarations.
+t19b/mirror/Console/verify/scripts/weave-verify-book.ts(28,8): error TS2307: Cannot find module '@/lib/weave/market-canon' or its corresponding type declarations.
+t19b/mirror/Console/verify/src/lib/weave/chain.ts(10,40): error TS2307: Cannot find module 'ethers' or its corresponding type declarations.
+t19b/mirror/Console/verify/src/lib/weave/evm.ts(20,8): error TS2307: Cannot find module 'ethers' or its corresponding type declarations.
+t19b/mirror/Console/verify/src/lib/weave/evm.ts(21,37): error TS2307: Cannot find module 'ethers' or its corresponding type declarations.
+t19b/mirror/FleetHQ/examples/websocket/server.ts(2,24): error TS2307: Cannot find module 'socket.io' or its corresponding type declarations.
+t19b/mirror/FleetHQ/mini-services/agent-hq/index.ts(1,24): error TS2307: Cannot find module 'socket.io' or its corresponding type declarations.
+t19b/mirror/FleetHQ/mini-services/agent-hq/src/fronthouse.ts(49,79): error TS2339: Property 'dir' does not exist on type 'ImportMeta'.
+t19b/mirror/FleetHQ/mini-services/agent-hq/src/fronthouse.ts(66,9): error TS2769: No overload matches this call.
+  The last overload gave the following error.
+    Property 'NODE_ENV' is missing in type 'Record<string, string>' but required in type 'ProcessEnv'.
+t19b/mirror/FleetHQ/mini-services/agent-hq/src/fronthouse.ts(70,13): error TS2339: Property 'on' does not exist on type 'never'.
+  The intersection 'ChildProcessWithoutNullStreams & ChildProcessByStdio<Writable, Readable, Readable> & ... 7 more ... & ChildProcess' was reduced to 'never' because property 'stdin' has conflicting types in some constituents.
+t19b/mirror/FleetHQ/mini-services/agent-hq/src/fronthouse.ts(71,13): error TS2339: Property 'unref' does not exist on type 'never'.
+  The intersection 'ChildProcessWithoutNullStreams & ChildProcessByStdio<Writable, Readable, Readable> & ... 7 more ... & ChildProcess' was reduced to 'never' because property 'stdin' has conflicting types in some constituents.
+t19b/mirror/FleetHQ/mini-services/agent-hq/src/sim.ts(18,10): error TS2341: Property 'emit' is private and only accessible within class 'Office'.
+t19b/mirror/FleetHQ/mini-services/agent-hq/src/sim.ts(34,10): error TS2341: Property 'emit' is private and only accessible within class 'Office'.
+t19b/mirror/FleetHQ/mini-services/agent-hq/src/sim.ts(112,10): error TS2341: Property 'emit' is private and only accessible within class 'Office'.
+t19b/mirror/FleetHQ/mini-services/agent-hq/tools/lineage-guard.ts(370,47): error TS2741: Property 'NODE_ENV' is missing in type '{ GIT_EDITOR: string; }' but required in type 'ProcessEnv'.
+t19b/mirror/FleetHQ/mini-services/agent-hq/tools/lineage-guard.ts(424,50): error TS2741: Property 'NODE_ENV' is missing in type '{ GIT_EDITOR: string; }' but required in type 'ProcessEnv'.
+t19b/mirror/FleetHQ/mini-services/boot-verifier/index.ts(153,15): error TS2867: Cannot find name 'Bun'. Do you need to install type definitions for Bun? Try `npm i --save-dev @types/bun`.
+t19b/mirror/FleetHQ/mini-services/boot-verifier/index.ts(213,1): error TS2867: Cannot find name 'Bun'. Do you need to install type definitions for Bun? Try `npm i --save-dev @types/bun`.
+t19b/mirror/FleetHQ/mini-services/duckai/src/duckai.ts(1,23): error TS2307: Cannot find module 'user-agents' or its corresponding type declarations.
+t19b/mirror/FleetHQ/mini-services/duckai/src/duckai.ts(2,23): error TS2307: Cannot find module 'jsdom' or its corresponding type declarations.
+t19b/mirror/FleetHQ/mini-services/duckai/src/duckai.ts(260,5): error TS2741: Property 'vqd' is missing in type '{ hash: string; }' but required in type 'VQDResponse'.
+t19b/mirror/FleetHQ/mini-services/duckai/src/server.ts(5,16): error TS2867: Cannot find name 'Bun'. Do you need to install type definitions for Bun? Try `npm i --save-dev @types/bun`.
+t19b/mirror/FleetHQ/mini-services/duckai/src/tool-service.ts(128,47): error TS1501: This regular expression flag is only available when targeting 'es2018' or later.
+t19b/mirror/FleetHQ/mini-services/duckai/tests/e2e-tools.test.ts(1,59): error TS2307: Cannot find module 'bun:test' or its corresponding type declarations.
+t19b/mirror/FleetHQ/mini-services/duckai/tests/e2e-tools.test.ts(2,29): error TS2307: Cannot find module 'bun' or its corresponding type declarations.
+t19b/mirror/FleetHQ/mini-services/duckai/tests/e2e-tools.test.ts(14,14): error TS2867: Cannot find name 'Bun'. Do you need to install type definitions for Bun? Try `npm i --save-dev @types/bun`.
+t19b/mirror/FleetHQ/mini-services/duckai/tests/openai-library.test.ts(1,59): error TS2307: Cannot find module 'bun:test' or its corresponding type declarations.
+t19b/mirror/FleetHQ/mini-services/duckai/tests/openai-library.test.ts(2,20): error TS2307: Cannot find module 'openai' or its corresponding type declarations.
+t19b/mirror/FleetHQ/mini-services/duckai/tests/openai-simple.test.ts(1,59): error TS2307: Cannot find module 'bun:test' or its corresponding type declarations.
+t19b/mirror/FleetHQ/mini-services/duckai/tests/openai-simple.test.ts(2,20): error TS2307: Cannot find module 'openai' or its corresponding type declarations.
+t19b/mirror/FleetHQ/mini-services/duckai/tests/openai-tools.test.ts(1,50): error TS2307: Cannot find module 'bun:test' or its corresponding type declarations.
+t19b/mirror/FleetHQ/mini-services/duckai/tests/rate-limit-handling.test.ts(1,50): error TS2307: Cannot find module 'bun:test' or its corresponding type declarations.
+t19b/mirror/FleetHQ/mini-services/duckai/tests/rate-limit-handling.test.ts(193,66): error TS2345: Argument of type '{ model: string; messages: { role: string; content: string; }[]; tools: ToolDefinition[]; }' is not assignable to parameter of type 'ChatCompletionRequest'.
+  Types of property 'messages' are incompatible.
+    Type '{ role: string; content: string; }[]' is not assignable to type 'ChatCompletionMessage[]'.
+      Type '{ role: string; content: string; }' is not assignable to type 'ChatCompletionMessage'.
+        Types of property 'role' are incompatible.
+          Type 'string' is not assignable to type '"user" | "system" | "assistant" | "tool"'.
+t19b/mirror/FleetHQ/mini-services/duckai/tests/rate-limit-monitor.test.ts(1,50): error TS2307: Cannot find module 'bun:test' or its corresponding type declarations.
+t19b/mirror/FleetHQ/mini-services/duckai/tests/rate-limit-monitor.test.ts(2,34): error TS2307: Cannot find module '../src/rate-limit-monitor' or its corresponding type declarations.
+t19b/mirror/FleetHQ/mini-services/duckai/tests/rate-limit-monitor.test.ts(121,33): error TS2339: Property 'windowStart' does not exist on type 'RateLimitInfo'.
+t19b/mirror/FleetHQ/mini-services/duckai/tests/rate-limit-monitor.test.ts(161,23): error TS2339: Property 'requestCount' does not exist on type 'RateLimitInfo'.
+t19b/mirror/FleetHQ/mini-services/duckai/tests/rate-limit-monitor.test.ts(162,23): error TS2339: Property 'windowStart' does not exist on type 'RateLimitInfo'.
+t19b/mirror/FleetHQ/mini-services/duckai/tests/rate-limit-monitor.test.ts(196,16): error TS18046: 'error' is of type 'unknown'.
+t19b/mirror/FleetHQ/mini-services/duckai/tests/server.test.ts(1,59): error TS2307: Cannot find module 'bun:test' or its corresponding type declarations.
+t19b/mirror/FleetHQ/mini-services/duckai/tests/tool-service.test.ts(1,50): error TS2307: Cannot find module 'bun:test' or its corresponding type declarations.
+t19b/mirror/FleetHQ/mini-services/office-recruit/recruit.ts(76,13): error TS2867: Cannot find name 'Bun'. Do you need to install type definitions for Bun? Try `npm i --save-dev @types/bun`.
+t19b/mirror/FleetHQ/mini-services/office-recruit/recruit.ts(388,16): error TS2867: Cannot find name 'Bun'. Do you need to install type definitions for Bun? Try `npm i --save-dev @types/bun`.
+t19b/mirror/FleetHQ/mini-services/office-selfcheck/index.ts(230,1): error TS2867: Cannot find name 'Bun'. Do you need to install type definitions for Bun? Try `npm i --save-dev @types/bun`.
+t19b/mirror/FleetHQ/src/app/api/operator/message/route.ts(19,29): error TS2307: Cannot find module '@/lib/operator-session' or its corresponding type declarations.
+t19b/mirror/FleetHQ/src/app/api/operator/unlock/route.ts(17,28): error TS2307: Cannot find module '@/lib/operator-session' or its corresponding type declarations.
+t19b/mirror/FleetHQ/src/app/api/veritas/route.ts(22,8): error TS2307: Cannot find module '@/lib/veritas' or its corresponding type declarations.
+t19b/mirror/FleetHQ/src/app/page.tsx(1,21): error TS2307: Cannot find module '@/components/agent-hq/AgentHQ' or its corresponding type declarations.
+t19b/mirror/FleetHQ/src/components/agent-hq/AgentHQ.tsx(261,37): error TS2345: Argument of type 'import("/home/z/my-project/t19b/mirror/FleetHQ/src/components/agent-hq/types").Snapshot' is not assignable to parameter of type 'import("/home/z/my-project/src/components/agent-hq/types").Snapshot'.
+  The types of 'status.backend' are incompatible between these types.
+    Type '"live" | "sim" | "static" | "mirror"' is not assignable to type '"live" | "sim"'.
+      Type '"static"' is not assignable to type '"live" | "sim"'.
+t19b/mirror/FleetHQ/src/components/agent-hq/AgentHQ.tsx(316,35): error TS2345: Argument of type 'import("/home/z/my-project/t19b/mirror/FleetHQ/src/components/agent-hq/types").ForemanStatus' is not assignable to parameter of type 'import("/home/z/my-project/src/components/agent-hq/types").ForemanStatus'.
+  Types of property 'backend' are incompatible.
+    Type '"live" | "sim" | "static" | "mirror"' is not assignable to type '"live" | "sim"'.
+      Type '"static"' is not assignable to type '"live" | "sim"'.
+t19b/mirror/FleetHQ/src/components/hq/GitWallData.tsx(216,31): error TS2339: Property 'lastRunConclusion' does not exist on type 'RepoFleetView'.
+t19b/mirror/FleetHQ/src/components/hq/GitWallData.tsx(216,52): error TS2339: Property 'lastRunStatus' does not exist on type 'RepoFleetView'.
+t19b/mirror/FleetHQ/src/components/hq/GitWallData.tsx(219,20): error TS2339: Property 'commits7d' does not exist on type 'RepoFleetView'.
+t19b/mirror/FleetHQ/src/components/hq/GitWallData.tsx(219,64): error TS2339: Property 'commits7d' does not exist on type 'RepoFleetView'.
+t19b/mirror/FleetHQ/src/components/hq/GitWallData.tsx(220,20): error TS2339: Property 'commits7d' does not exist on type 'RepoFleetView'.
+t19b/mirror/FleetHQ/src/components/hq/GitWallData.tsx(220,34): error TS2339: Property 'commits7dCapped' does not exist on type 'RepoFleetView'.
+t19b/mirror/FleetHQ/src/components/hq/Stations.tsx(82,47): error TS2367: This comparison appears to be unintentional because the types '"sim"' and '"mirror"' have no overlap.
+t19b/mirror/FleetHQ/src/components/worlds/SelfWorld.tsx(34,21): error TS2339: Property 'freshOracle' does not exist on type 'WorldsPayload'.
+t19b/mirror/FleetHQ/src/components/worlds/SelfWorld.tsx(35,19): error TS2339: Property 'connectivity' does not exist on type 'WorldsPayload'.
+t19b/mirror/FleetHQ/src/components/worlds/SelfWorld.tsx(36,19): error TS2339: Property 'bootVerify' does not exist on type 'WorldsPayload'.
+t19b/mirror/FleetHQ/src/components/worlds/SelfWorld.tsx(72,19): error TS2339: Property 'freshOracle' does not exist on type 'WorldsPayload'.
+t19b/mirror/FleetHQ/src/components/worlds/SelfWorld.tsx(110,19): error TS2339: Property 'connectivity' does not exist on type 'WorldsPayload'.
+t19b/mirror/FleetHQ/src/lib/hq/feed.ts(79,5): error TS2322: Type '"mirror"' is not assignable to type '"live" | "sim"'.
+t19b/mirror/FleetHQ/tools/office3d-static/main.tsx(113,7): error TS2322: Type '"static"' is not assignable to type '"live" | "sim"'.
+t19b/mirror/FleetHQ/tools/office3d-static/main.tsx(135,9): error TS2322: Type '"static"' is not assignable to type '"live" | "sim"'.
+t19b/mirror/FleetHQ/tools/security-regression.ts(181,50): error TS2339: Property 'dependsOn' does not exist on type '{ id: string; title: string; description: string; status: string; }'.
+tools/office3d-static/main.tsx(113,7): error TS2322: Type '"static"' is not assignable to type '"live" | "sim"'.
+tools/office3d-static/main.tsx(135,9): error TS2322: Type '"static"' is not assignable to type '"live" | "sim"'.
