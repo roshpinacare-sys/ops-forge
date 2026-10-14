@@ -1,5 +1,10 @@
 # ops-forge — איבר-הביצוע של הצי
 
+[![SAOS office](https://roshpinacare-sys.github.io/Domain/badge/office.svg)](https://roshpinacare-sys.github.io/Domain/office3d/)
+[![SAOS fleet](https://roshpinacare-sys.github.io/Domain/badge/fleet.svg)](https://roshpinacare-sys.github.io/Domain/status/)
+[![steem-edge](https://roshpinacare-sys.github.io/Domain/badge/edge.svg)](https://roshpinacare-sys.github.io/Domain/money.html)
+
+
 השלם של המערכת המוסדית. GridWatch חש בריאות-ריצות. ops-intake מצייר את המרחב ומייצר תור-עבודות מדודר. ops-forge לוקח את התור ומבצע — הידיים שהיו חסרות. בלי הריפו הזה הרשת מודדת ומדווחת ואף אחד לא עושה; איתו כל מחזור מוליד עבודה גלויה עם קבלות.
 
 ## הלופ (כל 30 דק, בענן של GitHub, ללא תלות בסביבה חיצונית)
