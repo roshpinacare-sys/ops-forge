@@ -1,6 +1,6 @@
 # אבחון — Domain/economy-engine
 
-נמדד — 2026-11-09T10:06:58.483Z · ריצה 42543688401 · 2026-11-09T01:05:42Z.
+נמדד — 2026-11-09T20:57:37.737Z · ריצה 42612920778 · 2026-11-09T11:56:14Z.
 
 ## שרשרת-הצעדים
 
@@ -11,7 +11,7 @@
   · checkout private steem (seal custody lives here) — proven org-gitleaks pattern
   · git identity for the steem receipt commit
   · Run actions/setup-node@v5
-  · install signer lib (steem@0.7.11 — pinned, 14-c doctrine; ecurve/bigi for the blurt leg, Task 16-a)
+  · install signer lib (steem@0.7.11 ��� pinned, 14-c doctrine; ecurve/bigi for the blurt leg, Task 16-a)
   x run the economy engine cycle (seal → auths → candidates → votes → txids → receipt)
   · prove the receipt landed in steem (API-verified head is asserted by the caller wave)
   · Post Run actions/setup-node@v5
