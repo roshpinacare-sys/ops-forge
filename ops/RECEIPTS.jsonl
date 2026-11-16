@@ -1,15 +1,7 @@
-{"at":"2026-11-05T17:33:24.164Z","orderId":"QUEUE-20261014-02","recipe":"VersionInfo","result":"דול�� — ערוץ פעיל ב-Domain — ��הזמנה נמסרת בהסלמה, המבצע לא נוגע"}
-{"at":"2026-11-05T23:38:14.664Z","orderId":"QUEUE-20261029-28","recipe":"FeedVerify","result":"����יד עדיין מת — הוסלם לריבונות","commits":[]}
-{"at":"2026-11-05T23:38:17.973Z","orderId":"QUEUE-20261104-46","recipe":"StreakDiagnose","result":"אבחון נרשם (ה��סלם)","commits":["1d039c6152d89ff7abe0b96828831613a104e8bb"]}
-{"at":"2026-11-05T23:38:17.973Z","orderId":"QUEUE-20261105-51","kind":"stale-artifact","result":"measured-unmatched — אין מתכון דטרמיניסטי; ממתין לס��כן-שפה או לריבונות"}
-{"at":"2026-11-05T23:38:17.973Z","orderId":"QUEUE-20261016-06","kind":"gridwatch-owned","result":"measured-unmatched — אין מתכון דטרמיניס��י; ממתין לסוכן-שפה או ��ריב����ות"}
-{"at":"2026-11-05T23:38:17.973Z","orderId":"QUEUE-20261105-53","kind":"gridwatch-owned","result":"measured-unmatched ��� אין מתכון דטרמיניסטי; ממ��ין לסוכן-שפה או ל��יבונות"}
-{"at":"2026-11-05T23:38:17.973Z","orderId":"QUEUE-20261105-52","kind":"gridwatch-owned","result":"measured-unmatched — אין מתכון דטרמיניסטי; ממתין לסוכן-שפה או לריבונות"}
-{"at":"2026-11-05T23:38:17.973Z","orderId":"QUEUE-20261014-02","recipe":"VersionInfo","result":"דולג — ערוץ פעיל ב-Domain — ההזמנה נמסרת בהסלמה, המבצע לא נוגע"}
 {"at":"2026-11-06T03:33:01.860Z","orderId":"QUEUE-20261029-28","recipe":"FeedVerify","result":"הפיד עדיין ��ת — הוסלם לריבונות","commits":[]}
 {"at":"2026-11-06T03:33:06.743Z","orderId":"QUEUE-20261104-46","recipe":"StreakDiagnose","result":"אבחון נרשם (הוסלם)","commits":["cc3fc9dfd2744cd01bfa7f180ddb9bb5cf05b36d"]}
 {"at":"2026-11-06T03:33:06.743Z","orderId":"QUEUE-20261105-51","kind":"stale-artifact","result":"measured-unmatched — אין מתכון דטרמיניסטי; ממתין לסוכן-שפה או לריבונות"}
-{"at":"2026-11-06T03:33:06.743Z","orderId":"QUEUE-20261016-06","kind":"gridwatch-owned","result":"measured-unmatched — אין מתכו��� דטרמיניסטי; ממתין לסוכן-שפה או לריבונות"}
+{"at":"2026-11-06T03:33:06.743Z","orderId":"QUEUE-20261016-06","kind":"gridwatch-owned","result":"measured-unmatched �� אין מתכו��� דטרמיניסטי; ממתין לסוכן-שפה או לריבונות"}
 {"at":"2026-11-06T03:33:06.743Z","orderId":"QUEUE-20261105-53","kind":"gridwatch-owned","result":"measured-unmatched — אין מתכון דטרמיניסטי; ממתין לסוכן-שפה או לריבו��ות"}
 {"at":"2026-11-06T03:33:06.743Z","orderId":"QUEUE-20261105-52","kind":"gridwatch-owned","result":"measured-unmatched — אין מתכון דטרמיניסטי; מ��תין לסוכן-שפה או לריב��נות"}
 {"at":"2026-11-06T03:33:06.743Z","orderId":"QUEUE-20261014-02","recipe":"VersionInfo","result":"דולג — ערוץ פעיל ב-Domain — ההזמנה נמסרת בהסלמה, המבצע לא נוגע"}
@@ -36,7 +28,7 @@
 {"at":"2026-11-06T23:42:26.083Z","orderId":"QUEUE-20261016-06","kind":"gridwatch-owned","result":"measured-unmatched — אין מתכון דטרמיניסטי; ממתין לסוכן-שפה או לר����ונות"}
 {"at":"2026-11-06T23:42:26.083Z","orderId":"QUEUE-20261105-52","kind":"gridwatch-owned","result":"measured-unmatched — אין מ��כון דטרמיניסטי; ממתין לסוכן-שפה או לריבונות"}
 {"at":"2026-11-06T23:42:26.084Z","orderId":"QUEUE-20261014-02","recipe":"VersionInfo","result":"דולג — ערוץ ��עיל ב-Domain — ההזמנה נמסרת בהסלמה, המבצע לא נוגע"}
-{"at":"2026-11-07T04:55:05.042Z","orderId":"QUEUE-20261029-28","recipe":"FeedVerify","result":"הפ���ד עדיין מת — הוסלם לריבונות","commits":[]}
+{"at":"2026-11-07T04:55:05.042Z","orderId":"QUEUE-20261029-28","recipe":"FeedVerify","result":"��פ���ד עדיין מת — הוסלם לריבונות","commits":[]}
 {"at":"2026-11-07T04:55:10.137Z","orderId":"QUEUE-20261106-55","recipe":"StreakDiagnose","result":"א��חון נרשם (הוס��ם)","commits":["4d27144bc672c2c7599a91dfa92b3e382aeac16a"]}
 {"at":"2026-11-07T04:55:15.241Z","orderId":"QUEUE-20261106-56","recipe":"StreakDiagnose","result":"אבחון נרשם (הוסלם)","commits":["ec0ad17077c4381d2e0fff6e39a4646fa15add53"]}
 {"at":"2026-11-07T04:55:15.241Z","orderId":"QUEUE-20261106-57","kind":"stale-artifact","result":"measured-unmatched — אין מתכון דטרמ��ניסטי; ממתין לסוכן-שפ�� או לריבונות"}
@@ -49,14 +41,14 @@
 {"at":"2026-11-07T11:34:16.785Z","orderId":"QUEUE-20261106-56","recipe":"StreakDiagnose","result":"אבחו�� נרשם (הוסלם)","commits":["525cd8508049328c335681cc960f043084648bbd"]}
 {"at":"2026-11-07T11:34:16.785Z","orderId":"QUEUE-20261016-06","kind":"gridwatch-owned","result":"measured-unmatched ��� אין מתכון דטרמיניסטי; ממתין לסוכן-שפה או לריבונות"}
 {"at":"2026-11-07T11:34:16.785Z","orderId":"QUEUE-20261105-52","kind":"gridwatch-owned","result":"measured-unmatched — אין מתכון דטרמיניסטי; ממתין לסוכן-שפה או לרי��ונות"}
-{"at":"2026-11-07T11:34:16.785Z","orderId":"QUEUE-20261014-02","recipe":"VersionInfo","result":"דולג — ערוץ פעיל ב-Domain — ההזמנה נמסרת בהסלמה, המב��ע לא נוגע"}
+{"at":"2026-11-07T11:34:16.785Z","orderId":"QUEUE-20261014-02","recipe":"VersionInfo","result":"דולג — ערוץ פעיל ב-Domain — ההזמנה נמסרת בהסלמה, המב��ע לא נוג��"}
 {"at":"2026-11-07T17:29:45.757Z","orderId":"QUEUE-20261029-28","recipe":"FeedVerify","result":"הפי�� עדיין מת — הוסלם לריב��נות","commits":[]}
 {"at":"2026-11-07T17:29:49.289Z","orderId":"QUEUE-20261107-57","recipe":"StreakDiagnose","result":"אבחון נרשם (הוסלם)","commits":["8e41ee919a82d9bbc10bfd2645c3271b3c6a77d0"]}
 {"at":"2026-11-07T17:29:52.658Z","orderId":"QUEUE-20261106-56","recipe":"StreakDiagnose","result":"אבחון נרשם (הו��לם)","commits":["78f3226694a9ff21fd6915ad285390d484b8490e"]}
 {"at":"2026-11-07T17:29:52.658Z","orderId":"QUEUE-20261107-58","kind":"gridwatch-owned","result":"measured-unmatched — ��ין ��תכון דטרמיניסטי; ממתין לסוכן-שפה או לריבונות"}
 {"at":"2026-11-07T17:29:52.658Z","orderId":"QUEUE-20261016-06","kind":"gridwatch-owned","result":"measured-unmatched — אין מתכון דטרמיניסטי; ממתין לסוכן-שפה או לריבונות"}
 {"at":"2026-11-07T17:29:52.658Z","orderId":"QUEUE-20261105-52","kind":"gridwatch-owned","result":"measured-unmatched — אין מתכון דטרמיניסט��; ממתין לסוכן-שפה או לריבונות"}
-{"at":"2026-11-07T17:29:52.659Z","orderId":"QUEUE-20261014-02","recipe":"VersionInfo","result":"דולג — ערוץ פעיל ב-Domain — ההזמנה נמסרת בהסלמה, המ��צע לא נוגע"}
+{"at":"2026-11-07T17:29:52.659Z","orderId":"QUEUE-20261014-02","recipe":"VersionInfo","result":"דולג — ערוץ פעיל ב-Domain — ההזמנה ��מסרת בהסלמה, המ��צע לא נוגע"}
 {"at":"2026-11-07T21:04:47.588Z","orderId":"QUEUE-20261029-28","recipe":"FeedVerify","result":"הפיד ��דיין מת — הוסלם לריבונות","commits":[]}
 {"at":"2026-11-07T21:04:50.954Z","orderId":"QUEUE-20261107-57","recipe":"StreakDiagnose","result":"אבחון נרשם (הוסלם)","commits":["fbe4942a373c0285eb4684bb8f3e7ece6f65c0b9"]}
 {"at":"2026-11-07T21:04:54.565Z","orderId":"QUEUE-20261106-56","recipe":"StreakDiagnose","result":"אבחון נרשם (הוסלם)","commits":["d82879ae08499cfaa331b0a953183b99034bb353"]}
@@ -103,7 +95,7 @@
 {"at":"2026-11-09T02:25:22.960Z","orderId":"QUEUE-20261016-06","kind":"gridwatch-owned","result":"measured-unmatched — אין מתכון דטרמיניסטי; ממתין לסוכן-שפה או לריבונ��ת"}
 {"at":"2026-11-09T02:25:22.960Z","orderId":"QUEUE-20261108-57","kind":"gridwatch-owned","result":"measured-unmatched ��� אין מתכון דטר��יניסטי; ממתין לסוכן-שפה או לריבונות"}
 {"at":"2026-11-09T02:25:22.961Z","orderId":"QUEUE-20261014-02","recipe":"VersionInfo","result":"דולג — ערוץ פעיל ב-Domain — ההז��נה נמסרת בהסלמה, המבצע לא נוגע"}
-{"at":"2026-11-09T10:06:57.440Z","orderId":"QUEUE-20261029-28","recipe":"FeedVerify","result":"הפיד עד��ין מת — הוסלם לריבונות","commits":[]}
+{"at":"2026-11-09T10:06:57.440Z","orderId":"QUEUE-20261029-28","recipe":"FeedVerify","result":"הפיד ��ד��ין מת — הוסלם לריבונות","commits":[]}
 {"at":"2026-11-09T10:07:01.427Z","orderId":"QUEUE-20261109-59","recipe":"StreakDiagnose","result":"אבחון נרשם (הוסלם)","commits":["806152111a338ebb1f0751cd57a447bcb7743fc5"]}
 {"at":"2026-11-09T10:07:07.927Z","orderId":"QUEUE-20261109-60","recipe":"StreakDiagnose","result":"אבחון נרשם (הוסלם)","commits":["58aebeff2e3f893a343f3649c4bdb9dee1ab354a"]}
 {"at":"2026-11-09T10:07:13.089Z","orderId":"QUEUE-20261109-61","recipe":"StreakDiagnose","result":"אבחון נרשם (הוסלם)","commits":["c903cc05e7a68fed7204c7420343811778b735ba"]}
@@ -144,7 +136,7 @@
 {"at":"2026-11-11T00:11:30.014Z","orderId":"QUEUE-20261110-29","recipe":"StreakDiagnose","result":"אבחון נרשם (הוסלם)","commits":["4f6485d9e8a8d01effbcbc2413b4690521088d34"]}
 {"at":"2026-11-11T00:11:34.883Z","orderId":"QUEUE-20261110-31","recipe":"StreakDiagnose","result":"אבחון נרשם (הוסלם)","commits":["1009a6e36986510aec29693ce9c542eea53a0e92"]}
 {"at":"2026-11-11T00:11:34.883Z","orderId":"QUEUE-20261110-30","kind":"stale-artifact","result":"measured-unmatched — אין מתכון דטרמיניסטי; ממתין לסוכן-שפה או לר��בונות"}
-{"at":"2026-11-11T00:11:34.883Z","orderId":"QUEUE-20261110-32","kind":"gridwatch-owned","result":"measured-unmatched — אין מתכ��ן דטרמיניסטי; ממתין לסוכן-שפה או לריבונות"}
+{"at":"2026-11-11T00:11:34.883Z","orderId":"QUEUE-20261110-32","kind":"gridwatch-owned","result":"measured-unmatched — אין מתכ����ן דטרמיניסטי; ממתין לסוכן-שפה או לריבונות"}
 {"at":"2026-11-11T00:11:34.883Z","orderId":"QUEUE-20261016-06","kind":"gridwatch-owned","result":"measured-unmatched — אין מתכון ��טרמיניסטי; ��מתין לסוכן-שפה או לריבונות"}
 {"at":"2026-11-11T00:11:34.883Z","orderId":"QUEUE-20261014-02","recipe":"VersionInfo","result":"דולג — ערוץ פעיל ב-Domain — ההזמנה נמסרת בהסלמה, המבצע לא נוגע"}
 {"at":"2026-11-11T06:56:17.306Z","orderId":"QUEUE-20261029-28","recipe":"FeedVerify","result":"הפיד עדיין מת — הוסלם לריבונות","commits":[]}
@@ -157,7 +149,7 @@
 {"at":"2026-11-11T14:58:46.904Z","orderId":"QUEUE-20261111-33","recipe":"StreakDiagnose","result":"אבחון נרשם (הוסלם)","commits":["3e31aaac0c40997aab74da27d6830117e39ecd3b"]}
 {"at":"2026-11-11T14:58:46.904Z","orderId":"QUEUE-20261016-06","kind":"gridwatch-owned","result":"measured-unmatched — אין מתכון דטרמיניסטי; ממתין לסוכ��-שפה או לריבונות"}
 {"at":"2026-11-11T14:58:46.904Z","orderId":"QUEUE-20261110-32","kind":"gridwatch-owned","result":"measured-unmatched — אין מתכון דטרמיניסטי; ממתין לסוכן-שפה או לריבונות"}
-{"at":"2026-11-11T14:58:46.904Z","orderId":"QUEUE-20261014-02","recipe":"VersionInfo","result":"דולג — ערוץ פעיל ב-Domain — ההז��נה נמסרת בהסלמה, המבצע לא נוגע"}
+{"at":"2026-11-11T14:58:46.904Z","orderId":"QUEUE-20261014-02","recipe":"VersionInfo","result":"דולג — ערוץ פעיל ב-Domain — ההז��נה נמסרת ב��סלמה, המבצע לא נוגע"}
 {"at":"2026-11-11T21:50:26.021Z","orderId":"QUEUE-20261029-28","recipe":"FeedVerify","result":"הפיד עדיין מת — הוסלם לר��בונות","commits":[]}
 {"at":"2026-11-11T21:50:29.734Z","orderId":"QUEUE-20261111-34","recipe":"StreakDiagnose","result":"אבחון נרשם (הוסלם)","commits":["72e1570e2ad779a83430b2aa5ff5cc55a356ffcb"]}
 {"at":"2026-11-11T21:50:36.809Z","orderId":"QUEUE-20261111-35","recipe":"StreakDiagnose","result":"אבחון נרשם (הוסלם)","commits":["3cba2a59f06955a1dbf11abfe540c7ff37c1e288"]}
@@ -171,7 +163,7 @@
 {"at":"2026-11-12T02:43:31.487Z","orderId":"QUEUE-20261111-35","recipe":"StreakDiagnose","result":"אבחון נרשם (הוסלם)","commits":["408cdc14df18befb52ee00d4cc462ffe2797963f"]}
 {"at":"2026-11-12T02:43:37.850Z","orderId":"QUEUE-20261111-33","recipe":"StreakDiagnose","result":"אבחון נרשם (הוסלם)","commits":["54caba13078ebf51eded15f74bf9ac038df374d9"]}
 {"at":"2026-11-12T02:43:37.850Z","orderId":"QUEUE-20261111-36","kind":"stale-artifact","result":"measured-unmatched — אין מתכון דטרמיניסטי; ממתין לסוכן-שפה או לריבונות"}
-{"at":"2026-11-12T02:43:37.850Z","orderId":"QUEUE-20261111-37","kind":"gridwatch-owned","result":"measured-unmatched — אין מתכון דטרמיניסטי; ממתין לסוכן-שפה או לריבונות"}
+{"at":"2026-11-12T02:43:37.850Z","orderId":"QUEUE-20261111-37","kind":"gridwatch-owned","result":"measured-unmatched — אין מתכון דטרמי��יסטי; ממתין לסוכן-שפה או לריבונות"}
 {"at":"2026-11-12T02:43:37.850Z","orderId":"QUEUE-20261111-38","kind":"gridwatch-owned","result":"measured-unmatched — אי�� מתכון דטרמיניסטי; ממתין לסוכן-שפה או לריבונות"}
 {"at":"2026-11-12T02:43:37.850Z","orderId":"QUEUE-20261016-06","kind":"gridwatch-owned","result":"measured-unmatched — אין מתכון דטרמיניסטי; ממתין לסוכן-שפה או לריבונות"}
 {"at":"2026-11-12T02:43:37.851Z","orderId":"QUEUE-20261014-02","recipe":"VersionInfo","result":"דולג — ערוץ פעיל ב-Domain — ההזמנה נמסרת בהסלמה, המבצע לא נוגע"}
@@ -205,14 +197,14 @@
 {"at":"2026-11-13T06:24:41.438Z","orderId":"QUEUE-20261111-35","recipe":"StreakDiagnose","result":"אבחון נרשם (הוסלם)","commits":["850caa0c7b41c84f915f856651d1b2979152399a"]}
 {"at":"2026-11-13T06:24:41.438Z","orderId":"QUEUE-20261112-39","kind":"stale-artifact","result":"measured-unmatched — אין מתכון דטרמיניסטי; ממתין לסוכן-שפה או לריבונות"}
 {"at":"2026-11-13T06:24:41.438Z","orderId":"QUEUE-20261016-06","kind":"gridwatch-owned","result":"measured-unmatched — אין מתכון דטרמיניסטי; ממתין לסוכן-שפה או לריבונות"}
-{"at":"2026-11-13T06:24:41.438Z","orderId":"QUEUE-20261111-37","kind":"gridwatch-owned","result":"measured-unmatched — אין מתכון דטרמי��יסטי; ממתין לסוכן-שפה או לריבונות"}
+{"at":"2026-11-13T06:24:41.438Z","orderId":"QUEUE-20261111-37","kind":"gridwatch-owned","result":"measured-unmatched — אין מתכון דטרמי��יסטי; ��מתין לסוכן-שפה או לריבונות"}
 {"at":"2026-11-13T06:24:41.438Z","orderId":"QUEUE-20261112-40","kind":"gridwatch-owned","result":"measured-unmatched — אין מתכון דטרמיניסטי; מ��תין ��סוכן-שפה או לריבונות"}
 {"at":"2026-11-13T06:24:41.439Z","orderId":"QUEUE-20261014-02","recipe":"VersionInfo","result":"דולג — ערוץ פעיל ב-Domain — ההז��נה נמסרת בהסלמה, המבצע לא נוגע"}
 {"at":"2026-11-13T14:48:43.164Z","orderId":"QUEUE-20261029-28","recipe":"FeedVerify","result":"הפיד עדיין מת — הוסלם לריבונות","commits":[]}
 {"at":"2026-11-13T14:48:46.607Z","orderId":"QUEUE-20261113-41","recipe":"StreakDiagnose","result":"אבחון נרשם (הוסלם)","commits":["c1e0b3ccdfe7328ab86d5338b22d9d5ad681f4eb"]}
 {"at":"2026-11-13T14:48:52.536Z","orderId":"QUEUE-20261113-42","recipe":"StreakDiagnose","result":"אבחון נרשם (הוסלם)","commits":["aab5b6de1b5c176f1710b95423a13e15be824822"]}
 {"at":"2026-11-13T14:48:56.427Z","orderId":"QUEUE-20261111-35","recipe":"StreakDiagnose","result":"אבחון נרשם (הוסלם)","commits":["eb330ccd62f5e4a84a941d47ea2fb55005c187a9"]}
-{"at":"2026-11-13T14:48:56.427Z","orderId":"QUEUE-20261112-40","kind":"gridwatch-owned","result":"measured-unmatched — אין מתכון ��טרמיניסטי; ממתין לסוכן-שפה או לריבונות"}
+{"at":"2026-11-13T14:48:56.427Z","orderId":"QUEUE-20261112-40","kind":"gridwatch-owned","result":"measured-unmatched — אין מתכון ��טרמ��ניסטי; ממתין לסוכן-שפה או לריבונות"}
 {"at":"2026-11-13T14:48:56.427Z","orderId":"QUEUE-20261111-37","kind":"gridwatch-owned","result":"measured-unmatched — אין מתכון דטרמיניסטי; ��מתין לסוכן-שפה או לריבונות"}
 {"at":"2026-11-13T14:48:56.427Z","orderId":"QUEUE-20261113-43","kind":"gridwatch-owned","result":"measured-unmatched — אין מתכון דטר��יניסטי; ממתין לסוכן-שפה או לריבונות"}
 {"at":"2026-11-13T14:48:56.427Z","orderId":"QUEUE-20261016-06","kind":"gridwatch-owned","result":"measured-unmatched — אין מתכון דטרמיניסטי; ממתין לסוכן-שפה או לריבונות"}
@@ -298,3 +290,11 @@
 {"at":"2026-11-16T07:04:31.183Z","orderId":"QUEUE-20261016-06","kind":"gridwatch-owned","result":"measured-unmatched — אין מתכון דטרמיניסטי; ממתין לסוכן-שפה או לריבונות"}
 {"at":"2026-11-16T07:04:31.183Z","orderId":"QUEUE-20261116-38","kind":"gridwatch-owned","result":"measured-unmatched — אין מתכון דטרמיניסטי; ממתין לסוכן-שפה או לריבונות"}
 {"at":"2026-11-16T07:04:31.184Z","orderId":"QUEUE-20261014-02","recipe":"VersionInfo","result":"דולג — ערוץ פעיל ב-Domain — ההזמנה נמסרת בהסלמה, המבצע לא נוגע"}
+{"at":"2026-11-16T17:18:04.032Z","orderId":"QUEUE-20261029-28","recipe":"FeedVerify","result":"הפיד עדיין מת — הוסלם לריבונות","commits":[]}
+{"at":"2026-11-16T17:18:09.178Z","orderId":"QUEUE-20261115-36","recipe":"StreakDiagnose","result":"אבחון נרשם (הוסלם)","commits":["a97a3ffb123e7f1e46736891568ea97c92e48d52"]}
+{"at":"2026-11-16T17:18:13.088Z","orderId":"QUEUE-20261116-37","recipe":"StreakDiagnose","result":"אבחון נרשם (הוסלם)","commits":["38dcc6d4d3bd790d77bba055e22222fafbe4045b"]}
+{"at":"2026-11-16T17:18:17.340Z","orderId":"QUEUE-20261111-35","recipe":"StreakDiagnose","result":"אבחון נרשם (הוסלם)","commits":["3c606cf0665b2aca230deffac9598f3ff3604c0a"]}
+{"at":"2026-11-16T17:18:17.340Z","orderId":"QUEUE-20261116-39","kind":"gridwatch-owned","result":"measured-unmatched — אין מתכון דטרמיניסטי; ממתין לסוכן-שפה או לריבונות"}
+{"at":"2026-11-16T17:18:17.340Z","orderId":"QUEUE-20261016-06","kind":"gridwatch-owned","result":"measured-unmatched — אין מתכון דטרמיניסטי; ממתין לסוכן-שפה או לריבונות"}
+{"at":"2026-11-16T17:18:17.340Z","orderId":"QUEUE-20261116-38","kind":"gridwatch-owned","result":"measured-unmatched — אין מתכון דטרמיניסטי; ממתין לסוכן-שפה או לריבונות"}
+{"at":"2026-11-16T17:18:17.341Z","orderId":"QUEUE-20261014-02","recipe":"VersionInfo","result":"דולג — ערוץ פעיל ב-Domain — ההזמנה נמסרת בהסלמה, המבצע לא נוגע"}
