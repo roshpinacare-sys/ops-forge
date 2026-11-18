@@ -1,17 +1,17 @@
 # אבחון — Domain/org-selftests
 
-נמדד — 2026-11-18T08:54:19.080Z · ריצה 43013921166 · 2026-11-11T11:40:44Z.
+נמדד — 2026-11-18T17:50:18.454Z · ריצה 44306013719 · 2026-11-18T12:39:32Z.
 
 ## שרשרת-הצעדים
 
-- job selftest (saos-control-center, bun-tsc) → failure; שלב כושל — Run bun-tsc on saos-control-center
+- job selftest (roshpina, bun-kernel-smoke) → success; שלב כושל — אין
   · Set up job
-  · Checkout saos-control-center
+  · Checkout roshpina
   · Python 3.11
   · Bun
-  x Run bun-tsc on saos-control-center
+  · Run bun-kernel-smoke on roshpina
   · Post Bun
-  · Post Checkout saos-control-center
+  · Post Checkout roshpina
   · Complete job
 - job selftest (saos-jummper, python-signingcontract) → success; שלב כושל — אין
   · Set up job
@@ -22,14 +22,23 @@
   · Post Python 3.11
   · Post Checkout saos-jummper
   · Complete job
-- job selftest (roshpina, bun-kernel-smoke) → success; שלב כושל — אין
+- job selftest (saos-sovereign-platform, bun-tsc) → success; שלב כושל — אין
   · Set up job
-  · Checkout roshpina
+  · Checkout saos-sovereign-platform
   · Python 3.11
   · Bun
-  · Run bun-kernel-smoke on roshpina
+  · Run bun-tsc on saos-sovereign-platform
   · Post Bun
-  · Post Checkout roshpina
+  · Post Checkout saos-sovereign-platform
+  · Complete job
+- job selftest (saos-control-center, bun-tsc) → failure; שלב כושל — Run bun-tsc on saos-control-center
+  · Set up job
+  · Checkout saos-control-center
+  · Python 3.11
+  · Bun
+  x Run bun-tsc on saos-control-center
+  · Post Bun
+  · Post Checkout saos-control-center
   · Complete job
 - job selftest (saos-sovereign-foundry, bun-tsc) → success; שלב כושל — אין
   · Set up job
@@ -39,15 +48,6 @@
   · Run bun-tsc on saos-sovereign-foundry
   · Post Bun
   · Post Checkout saos-sovereign-foundry
-  · Complete job
-- job selftest (saos-sovereign-platform, bun-tsc) → success; שלב כושל — אין
-  · Set up job
-  · Checkout saos-sovereign-platform
-  · Python 3.11
-  · Bun
-  · Run bun-tsc on saos-sovereign-platform
-  · Post Bun
-  · Post Checkout saos-sovereign-platform
   · Complete job
 - job selftest (saos-dex, bun-typecheck) → success; שלב כושל — אין
   · Set up job
